@@ -1,0 +1,19 @@
+<addon id="plugin.video.torrentplus" name="TorrentPlus" version="1.1.0" provider-name="Alisson">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.resolveurl"/>
+        <import addon="script.module.requests"/>
+        <import addon="script.module.beautifulsoup4"/>
+    </requires>
+    <extension
+        library="default.py"
+         point="xbmc.python.pluginsource"
+         provides="video">
+    <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Addon que navega e reproduz torrents do site torrentplus.org</summary>
+        <description>Addon baseado em HTML remoto, com menus, filtros, busca e suporte a ResolveURL e Elementum.</description>
+        <platform>all</platform>
+    </extension>
+</addon>
