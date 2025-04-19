@@ -1,5 +1,0 @@
-<settings>
-    <category label="Opções">
-        <setting id="default_player" type="labelenum" label="Reprodutor padrão" values="resolveurl|elementum" default="resolveurl" />
-    </category>
-</settings>
