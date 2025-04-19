@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.torrentplus" version="1.0.0" name="Torrent Plus" provider-name="SeuNome">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.requests" version="2.25.1"/>
+    <import addon="script.module.beautifulsoup4" version="4.9.3"/>
+  </requires>
+  <extension library="resources/lib/addon.py" point="xbmc.python.pluginsource">
+      <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Streaming de torrents via HTML</summary>
+    <description>Addon para reproduzir filmes/séries via magnet links.</description>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>

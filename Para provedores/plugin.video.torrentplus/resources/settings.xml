@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<settings>
+    <category label="Configurações Gerais">
+        <setting id="cache_enabled" type="bool" label="Ativar Cache" default="true"/>
+        <setting id="max_cache_time" type="number" label="Horas de Cache" default="24" enable="eq(-1,true)"/>
+    </category>
+
+    <category label="Serviços Debrid">
+        <setting id="debrid_service" type="enum" label="Serviço Preferido" values="RealDebrid|AllDebrid|Elementum" default="2"/>
+        <setting id="realdebrid_api_key" type="text" label="Chave API RealDebrid" default="" visible="eq(-1,0)"/>
+        <setting id="alldebrid_api_key" type="text" label="Chave API AllDebrid" default="" visible="eq(-2,1)"/>
+    </category>
+
+    <category label="Avançado">
+        <setting id="user_agent" type="text" label="User-Agent" default="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"/>
+    </category>
+</settings>
